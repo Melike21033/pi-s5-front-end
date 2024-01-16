@@ -1,0 +1,39 @@
+<div style="margin-left: 50px; background-color: rgb(255, 252, 250); width: 87%; overflow: hidden;border: 1px solid rgb(234, 234, 234);margin-top: 50px;">
+    <div style="margin-left: 20px; margin-bottom: 20px;">
+        <div style="display: inline-block;">
+            <h2>Client details</h2>
+        </div>
+        <div style="display: inline-block; margin-left: 74.8%;">
+            <button class="action-button" (click)="openModal()">+ Add New</button>
+        </div>
+<table class="table">
+    <tr>
+        <th>Client Id</th>
+        <th>Client Nom</th>
+        <th>Client Tel</th>
+        <th>Client Email</th>
+        <th>Client Adress</th>
+        <th>Client Status</th>
+        <th>Client Note</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2021-05-01</td>
+        <td>Ongoing</td>
+        <td>5000</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>
+            <img src="assets/icons8-edit.svg" alt="Edit" (click)="openModalUpdate()">
+            <img src="assets/icons8-delete.svg" alt="Delete" (click)="openModalDelete()">
+        </td>
+    </tr>
+   
+</table>
+</div>
+</div>
+<app-modaladdclient></app-modaladdclient>
+<app-modalupdateclient></app-modalupdateclient>
+<app-modaldeleteclient></app-modaldeleteclient>
